@@ -20,10 +20,10 @@ export default function GenreBadge({ genre }: GenreBadgeProps) {
         {genre.label}
       </button>
       {showTooltip && (
-        <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 rounded-lg glass-panel text-sm text-gray-300 shadow-xl">
+        <div className="absolute z-50 top-full right-0 mt-2 w-64 p-3 rounded-lg glass-panel text-sm text-gray-300 shadow-xl">
+          <div className="absolute bottom-full right-4 w-2 h-2 rotate-45 glass-panel -mb-1" />
           <div className="text-white font-medium mb-1">{genre.label}</div>
           <div>{genre.description}</div>
-          <div className="absolute top-full left-1/2 -translate-x-1/2 w-2 h-2 rotate-45 glass-panel -mt-1" />
         </div>
       )}
     </div>

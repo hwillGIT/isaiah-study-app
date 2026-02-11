@@ -62,7 +62,7 @@ export default function BigPictureView({ section }: BigPictureViewProps) {
       </div>
 
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold text-gray-200">Expert Perspectives</h3>
+        <h3 className="text-lg font-semibold text-gray-200">Entering the Text</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {bigPicture.perspectives.map((perspective, i) => {
             const colors = lensColors[perspective.role];

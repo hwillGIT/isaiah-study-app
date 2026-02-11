@@ -6,11 +6,11 @@ export const threadColors = {
 } as const;
 
 export const lensColors = {
-  'Spiritual Director': { bg: 'bg-violet-900/20', border: 'border-violet-400/50', text: 'text-violet-300', icon: 'text-violet-400', label: 'Spiritual Director' },
-  'Pastoral Director': { bg: 'bg-rose-900/20', border: 'border-rose-400/50', text: 'text-rose-300', icon: 'text-rose-400', label: 'Pastoral Director' },
-  'Psychologist': { bg: 'bg-teal-900/20', border: 'border-teal-400/50', text: 'text-teal-300', icon: 'text-teal-400', label: 'Psychologist' },
-  'Theologian': { bg: 'bg-slate-700/20', border: 'border-slate-400/50', text: 'text-slate-300', icon: 'text-slate-400', label: 'Theologian' },
-  'Historian': { bg: 'bg-amber-900/20', border: 'border-amber-700/50', text: 'text-amber-200', icon: 'text-amber-500', label: 'Historian' },
+  'Spiritual Director': { bg: 'bg-violet-900/20', border: 'border-violet-400/50', text: 'text-violet-300', icon: 'text-violet-400', label: 'For Your Soul' },
+  'Pastoral Director': { bg: 'bg-rose-900/20', border: 'border-rose-400/50', text: 'text-rose-300', icon: 'text-rose-400', label: 'For Your Daily Walk' },
+  'Psychologist': { bg: 'bg-teal-900/20', border: 'border-teal-400/50', text: 'text-teal-300', icon: 'text-teal-400', label: 'What You Might Be Feeling' },
+  'Theologian': { bg: 'bg-slate-700/20', border: 'border-slate-400/50', text: 'text-slate-300', icon: 'text-slate-400', label: 'The Deeper Pattern' },
+  'Historian': { bg: 'bg-amber-900/20', border: 'border-amber-700/50', text: 'text-amber-200', icon: 'text-amber-500', label: 'The World Behind the Text' },
 } as const;
 
 export const sectionThemes = [
