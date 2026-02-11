@@ -231,6 +231,66 @@ This keeps you in full control. When the class finishes section 3, you update th
 
 ---
 
+## Soul Reflection — The Emotional Heart of Each Section
+
+Soul Reflections are the place where all the scholarly analysis, structural beauty, and theological depth lands in the reader's actual life. They are not quizzes. They are mirrors.
+
+### How It Works
+
+**1. The Scenario (Emotional Translation)**
+Each Soul Reflection opens with a scenario that translates Isaiah's theological moment into a recognizable human experience. Written in second person, present tense, so the reader is *inside* it. Not "what do you think about this passage?" but "you are in this situation right now."
+
+**2. Seven Response Options (The Psychologist Writes These)**
+Seven honest descriptions of internal reactions — bodily, emotional, and cognitive. They name what actually happens in the reader, not what *should* happen:
+- Physical sensations: "Your jaw tightens," "A hollow ache opens in your chest," "Your eyes sting"
+- Emotional states: Named with precision from the Chart of Emotions — not "sad" but "desolate," not "happy" but "cautiously tender"
+- Cognitive patterns: "You scan your behavior for the cause," "You intellectualize to keep distance"
+- All 7 options treated with absolute equal dignity — no ranking, no progression from "worst" to "best"
+
+**3. The Insight (Three Lenses Working Together)**
+Each option reveals an insight woven from all three expert voices:
+- **The Spiritual Director** sees where God is meeting the reader in that specific reaction
+- **The Pastoral Director** connects it to a concrete next step in real life
+- **The Psychologist** names what's happening beneath the surface — the defense mechanism, the unmet need, the emotional logic
+
+The insight never corrects the reader's response. It honors it and then opens a door.
+
+### Example: Isaiah 6 (The Throne Room)
+
+**Scenario:** *"You are in a moment of worship — singing, praying, or simply sitting in silence — and suddenly the atmosphere shifts. The room doesn't feel warm and safe anymore. It feels vast. You feel small, not in a diminishing way, but in a way that makes everything you've been carrying seem both absurd and very real. What is your first impulse?"*
+
+**Seven Responses:**
+
+1. *"I pull back. I find myself reaching for my phone, adjusting in my seat — anything to break the intensity."*
+   → "The impulse to withdraw from overwhelming presence is self-preservation, not rebellion. The soul can only absorb the Holy in doses. The Spiritual Director would say: you don't need to force yourself to stay. Simply notice that you wanted to leave — that noticing is already a form of staying. God is not offended by your limits."
+
+2. *"My eyes fill with tears I can't explain. I don't know if it's grief, relief, or something I don't have a word for."*
+   → "These tears are older than your theology. They come from a place beneath language — the place where the soul recognizes its Maker before the mind can form a sentence. The Psychologist would call this 'affect without narrative' — feeling that precedes understanding. You don't need to name it yet. Let it be water, not a puzzle to solve."
+
+3. *"I feel exposed. Like every private failure is suddenly visible. I want to cover myself."*
+   → "This is Isaiah's response: 'Woe is me, I am undone.' The instinct to cover is as old as Eden — Adam reached for fig leaves. The Spiritual Director would say: the One who sees you fully is the same One who sent the coal. He doesn't expose to shame. He exposes to heal. You can let the fig leaves fall."
+
+4. *"I feel a strange excitement — almost dangerous. Like I'm standing on the edge of something I can't come back from."*
+   → "This is holy vertigo. The Psychologist would name it as the tension between attraction and terror — what Rudolf Otto called the 'mysterium tremendum et fascinans.' You are drawn and repelled simultaneously. That tension is not confusion. It is the correct human response to the living God. Stay on the edge. Don't retreat to safety."
+
+5. *"Nothing. I know this should be significant but I feel flat. Maybe worship doesn't work for me."*
+   → "Flatness in the presence of the Holy is more common than anyone admits. It doesn't mean worship isn't working. It may mean your soul has built a thick wall for good reasons — past disappointment, spiritual fatigue, or simply the fear that if you let yourself feel, the flood will be unmanageable. The Pastoral Director would say: show up anyway. Faithfulness in dryness is its own form of worship. The coal comes to you. You don't need to manufacture heat."
+
+6. *"I whisper, 'I am not worthy to be here.' The thought feels honest, not performative."*
+   → "This is the threshold moment. You have spoken truth without strategy — not to impress God, not to protect yourself, but because it's simply what's real. The Spiritual Director would say: this honesty is the very thing that opens the door. God doesn't need your worthiness. He needs your presence. And you are here."
+
+7. *"I hear the question — 'Whom shall I send?' — and something in me says yes before my mind can list the reasons I'm unqualified."*
+   → "That 'yes' came from below your objections. It came from the place the coal touched. The Pastoral Director would say: don't wait until you feel qualified. Isaiah didn't. He said 'Here I am' with freshly burned lips, still trembling. The call doesn't come after you're ready. The call is what makes you ready."
+
+### Design
+- Warm rose accent with Heart icon — consistent with James app
+- Label: "Soul Reflection"
+- Toggle behavior: click to reveal insight, click again to collapse
+- All 7 options visible simultaneously — no scrolling to find the "right" one
+- Generous spacing between options — each one deserves room to breathe
+
+---
+
 ## Content Structure Per Section (Complete)
 
 Each of the 7 sections contains 3 modules:
@@ -241,14 +301,14 @@ Each of the 7 sections contains 3 modules:
 - Literary context narrative
 - Five expert perspectives (Spiritual Director, Pastoral Director, Psychologist, Theologian, Historian)
 - Four-thread tracker (which themes are active, with explanations)
-- Reflection prompt with 5 options (all treated with equal dignity, three-lens insights)
+- Soul Reflection with 7 options (all treated with equal dignity, three-lens insights)
 
 ### Module 2: The Framework
 - Chiastic / poetic structure analysis with color-coded pairings
 - How the passage is architecturally designed
 - Structural lines with theological connections (hover to reveal)
 - Hebrew poetic devices identified where relevant
-- Reflection prompt with 5 options
+- Soul Reflection with 7 options
 
 ### Module 3: Verse by Verse Deep Dive
 - Scripture text in warm serif font (parchment styling)
@@ -259,7 +319,7 @@ Each of the 7 sections contains 3 modules:
 - The Emotional Journey — Psychologist traces the feeling-path (teal accent)
 - 5 Common Misreadings with gentle corrections (warm red/orange accent)
 - "So What / Now What" panel (three cards: blue meaning → rose personal → amber action)
-- Reflection prompt with 5 options
+- Soul Reflection with 7 options
 - Prayer prompt (Spiritual Director's violet accent)
 
 ---
@@ -384,6 +444,22 @@ PerspectiveItem, StructuralLine, KeywordInsight, VerseAnalysis, KeyConcept
 }
 ```
 
+### Enhanced: SoulReflection (formerly ReflectionPrompt)
+```
+{
+  scenario: string,          // Emotional translation of the passage into lived experience
+  options: SoulReflectionOption[]  // Exactly 7 options
+}
+```
+
+### Enhanced: SoulReflectionOption (formerly ReflectionOption)
+```
+{
+  text: string,              // Bodily/emotional/cognitive reaction (written by the Psychologist)
+  insight: string            // Three-lens insight (Spiritual Director + Pastoral Director + Psychologist)
+}
+```
+
 ### Enhanced: PerspectiveItem
 ```
 {
@@ -459,12 +535,12 @@ STUDY VIEW (The Deep Dive)
 │    ├── Literary context narrative
 │    ├── Five Expert Perspectives (color-coded by lens)
 │    ├── Four-thread explanations for this section
-│    └── Reflection (5 options, three-lens insights)
+│    └── Soul Reflection (7 options, three-lens insights)
 │
 ├── [Framework Tab]
 │    ├── Chiastic structure (color-coded pairs, hover for connections)
 │    ├── Poetic devices identified
-│    └── Reflection (5 options)
+│    └── Soul Reflection (7 options)
 │
 └── [Verse by Verse Tab]
      ├── Scripture text (parchment styling)
@@ -476,7 +552,7 @@ STUDY VIEW (The Deep Dive)
      ├── Emotional Journey (Psychologist's teal section)
      ├── 5 Common Misreadings (expandable, red/orange accent)
      ├── So What / Now What (three-card panel)
-     ├── Reflection (5 options)
+     ├── Soul Reflection (7 options)
      └── Prayer Prompt (violet, contemplative space)
 ```
 
