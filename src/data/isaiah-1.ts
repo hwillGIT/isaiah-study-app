@@ -25,14 +25,14 @@ export const isaiah1: Section = {
       'Isaiah (called to speak truth to a deaf nation)',
       'The rulers and judges of Jerusalem (corrupt, complicit)',
     ],
-    whyItMatters: 'Understanding that Isaiah 1 is addressed to a prosperous, religious nation \u2014 not a pagan one \u2014 changes everything. This is not God confronting strangers. This is God confronting God\'s own people who have kept all the forms of worship while abandoning its substance. The modern reader who attends church, serves on committees, and gives generously may find this chapter uncomfortably close to home.',
+    whyItMatters: 'Isaiah 1 is not aimed at pagans. It is aimed at the devout \u2014 a prosperous, religious nation that kept all the forms of worship while abandoning its substance. God is not confronting strangers here. God is confronting God\'s own people. If you attend church, serve on committees, and give generously, this chapter may land uncomfortably close to home.',
   },
 
   themes: [
     {
       theme: 'exodus',
       active: true,
-      connection: 'God references the exodus pattern \u2014 God raised and reared children (v.2), echoing the parent-child language of Deuteronomy. Israel\'s rebellion is framed as a child turning against the parent who rescued them from Egypt.',
+      connection: 'God raised and reared children (v.2) \u2014 the parent-child language of Deuteronomy echoing underneath. Israel\'s rebellion is a child turning against the parent who rescued them from Egypt.',
     },
     {
       theme: 'zion_eden',
@@ -52,7 +52,7 @@ export const isaiah1: Section = {
   ],
 
   bigPicture: {
-    literaryContext: 'Isaiah 1 functions as the overture to the entire book \u2014 a concentrated preview of every major theme that will unfold across sixty-six chapters. Like the opening movement of a symphony, it introduces the melodies the listener will hear developed, inverted, and resolved over the course of the whole composition. The chapter employs the covenant lawsuit genre (r\u00eeb), summoning heaven and earth as witnesses to God\'s case against God\'s people \u2014 a legal proceeding that echoes Moses\' final song in Deuteronomy 32. The emotional register moves from divine grief to prophetic fury to unexpected tenderness, establishing a pattern that will repeat throughout the book: accusation is never God\'s final word. Every theme is seeded here \u2014 the exodus memory of a parent raising children, Zion as the city that has fallen from faithfulness, the absence of a worthy leader, and the stubborn persistence of hope even in the midst of devastating critique. The chapter is deliberately designed to make the reader uncomfortable before offering hope, stripping away religious performance before extending the invitation of verse 18. To read Isaiah 1 well is to feel the ground shift beneath your own spiritual confidence \u2014 and then to hear, in the silence that follows, a voice that is grieved rather than contemptuous, and an offer that is staggering in its generosity.',
+    literaryContext: 'Think of the opening movement of a symphony \u2014 every melody that will unfold across the entire work, compressed into a single overture. That is Isaiah 1. In sixty-six chapters you will hear these themes developed, inverted, resolved \u2014 but they all begin here. A parent raising children who turn away. A city that was faithful and became something unrecognizable. The absence of a leader worth following. And hope, stubborn hope, breaking through even the most devastating accusation. The emotional register swings from grief to fury to an unexpected tenderness: accusation is never God\'s final word. The chapter strips away religious performance before extending the invitation of verse 18 \u2014 designed to make you uncomfortable before it offers you mercy. To read Isaiah 1 well is to feel the ground shift beneath your own spiritual confidence, and then to hear, in the silence that follows, a voice that is grieved rather than contemptuous \u2014 and an offer staggering in its generosity.',
 
     perspectives: [
       {
@@ -65,15 +65,15 @@ export const isaiah1: Section = {
       },
       {
         role: 'Psychologist',
-        text: 'The emotional landscape of Isaiah 1 is the landscape of cognitive dissonance \u2014 the gap between self-image and reality. The people addressed here genuinely believe they are worshiping well. They bring sacrifices, keep festivals, stretch out their hands in prayer. The accusation does not target their intentions but their outcomes: "your hands are full of blood." The psychological shock is not being told you are bad, but being told that the very things you counted as evidence of your goodness are the problem. This produces a characteristic defensive cascade: denial, anger, bargaining, grief \u2014 and potentially, the quiet honesty that opens the door to verse 18.',
+        text: 'You bring the sacrifices. You keep the festivals. You stretch out your hands in prayer. And then the text says: the very things you counted as evidence of your goodness are the problem. Not your failures \u2014 your faithfulness. That is the shock. Psychologists call it cognitive dissonance \u2014 the gap between self-image and reality \u2014 but before it has a name, it has a feeling: the ground disappearing beneath a confidence you thought was solid. What follows is predictable: denial, anger, bargaining, grief. And potentially \u2014 if you stay long enough \u2014 the quiet honesty that opens the door to verse 18.',
       },
       {
         role: 'Theologian',
-        text: 'Isaiah 1 deploys the covenant lawsuit (r\u00eeb) genre with devastating precision. God occupies the dual role of prosecutor and grieving parent \u2014 a theological tension that refuses resolution into either cold justice or sentimental mercy. The charges are covenantal, not merely moral: this is treaty violation language, the formal accusation that the vassal has broken faith with the sovereign who liberated them. Yet the chapter\'s most remarkable theological move is the pivot from prosecution to invitation in verse 18 \u2014 the prosecutor offers the defendant acquittal in the middle of the trial.',
+        text: 'The courtroom genre here is the r\u00eeb \u2014 a covenant lawsuit \u2014 and the most unsettling thing about it is this: the prosecutor and the grieving parent are the same person. God brings the formal charge, the language of a broken treaty, the accusation that a liberated people have turned on the one who freed them. And yet this is not cold justice. The fury is a parent\'s fury. The charges are covenantal \u2014 not "you broke a rule" but "you broke faith." And then comes the chapter\'s most staggering move: in the middle of the trial, the prosecutor pivots. Verse 18. The defendant is offered acquittal before the verdict lands.',
       },
       {
         role: 'Historian',
-        text: 'Eighth-century Judah under Uzziah was experiencing its longest period of prosperity since Solomon. Territorial expansion, economic growth, and military strength created a culture of self-confidence that masked deep structural injustice. The courts served the wealthy, the poor had no advocate, and religious institutions functioned as legitimizers of the status quo. Assyria was consolidating power to the northeast under Tiglath-pileser III, but Judah had not yet felt the existential threat. Isaiah speaks into this precise gap \u2014 the dangerous interval between prosperity and catastrophe, when a nation still has time to change course.',
+        text: 'Picture Jerusalem under Uzziah. The borders are wide, the treasury is full, the army is strong \u2014 the longest run of prosperity since Solomon. Walk through the city and you see new construction, bustling markets, a temple complex humming with activity. But step into the courts and the picture shifts: judges ruling for the highest bidder, the poor with no advocate, religious institutions rubber-stamping the status quo. And to the northeast, something most people haven\'t noticed yet \u2014 Assyria consolidating power under Tiglath-pileser III. Isaiah speaks into exactly this gap: the dangerous interval between prosperity and catastrophe, when a nation still has time to change course but almost no motivation to do so.',
       },
     ],
 
