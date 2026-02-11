@@ -17,10 +17,10 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "James Study App"
+args = "Isaiah Study App"
 
 [[workflows.workflow]]
-name = "James Study App"
+name = "Isaiah Study App"
 author = "agent"
 
 [[workflows.workflow.tasks]]

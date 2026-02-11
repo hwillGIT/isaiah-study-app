@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Book of James</title>
+    <title>The Book of Isaiah — Study App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
       @keyframes float {
         0% { transform: translateY(0px); }
@@ -16,6 +17,10 @@
         50% { background-position: 100% 50%; }
         100% { background-position: 0% 50%; }
       }
+      @keyframes glow-pulse {
+        0%, 100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+        50% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); }
+      }
       .animate-float {
         animation: float 6s ease-in-out infinite;
       }
@@ -23,7 +28,9 @@
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
       }
-      /* Custom scrollbar for glass effect */
+      .animate-glow {
+        animation: glow-pulse 3s ease-in-out infinite;
+      }
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -50,22 +57,19 @@
         background: rgba(255, 255, 255, 0.15);
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
       }
+
+      .scripture-text {
+        font-family: 'Crimson Pro', serif;
+      }
+
+      .font-serif-display {
+        font-family: 'Crimson Pro', serif;
+      }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-gray-900 text-white min-h-screen selection:bg-pink-500 selection:text-white">
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen selection:bg-pink-500 selection:text-white font-[Inter,sans-serif]">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

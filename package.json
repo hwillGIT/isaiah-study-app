@@ -1,7 +1,7 @@
 {
-  "name": "interactive-study-guide",
+  "name": "isaiah-study-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,6 @@
     "start": "vite preview --port 5000 --host 0.0.0.0"
   },
   "dependencies": {
-    "@google/genai": "^1.30.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "lucide-react": "^0.554.0",
