@@ -161,21 +161,73 @@ Examples:
 
 Styled in the Spiritual Director's violet accent, with a gentle, contemplative design. Not a quiz, not interactive — just space.
 
-### Feature 7: "Looking Ahead" — Connection to the Larger Book
-Each section ends with a brief "Looking Ahead" note that connects the current passage to where these themes develop later in Isaiah:
+### Feature 7: "Builds On / Points Toward" — The Reference Web
 
-- After Chapter 1 (Courtroom): "The courtroom reconvenes in chapters 41-45, but the defendant has changed. Now it is the nations — and Israel is the witness."
-- After Chapter 5 (Vineyard): "The vineyard reappears in 27:2-6. This time, God sings a different song: 'I will water it every moment.' The failed vineyard is replanted."
-- After Chapter 6 (Throne Room): "The commission to 'make hearts dull' finds its resolution in 35:5 and 42:7 — the blind eyes are opened, the deaf ears unstopped. What was sealed is unsealed."
-- After Chapter 9 (Child Born): "The child-king of chapter 9 becomes the suffering servant of chapter 53. The one who bears the government on his shoulders will bear our griefs."
+Each section has two reference panels that connect the current passage to the larger biblical story:
 
-Styled as a subtle, forward-pointing panel at the bottom of each section. Creates anticipation for future study.
+#### "Builds On" (Back-References)
+Shows what this passage echoes, assumes, or develops from earlier Scripture — both within Isaiah and across the Old Testament:
 
-### Feature 8: Section Progress Tracking
-The reader should see which sections they've completed:
-- Visual checkmarks or completion indicators on the section selection grid
-- Saved in browser local storage
-- A gentle "Continue where you left off" prompt on return
+| Section | Builds On |
+|---------|-----------|
+| Ch. 1 (Courtroom) | **Deuteronomy 32** (Song of Moses — the original covenant lawsuit); **Hosea 4** (God's case against Israel); **Exodus 19-20** (the covenant now being violated) |
+| Ch. 2 (Mountain) | **Genesis 11** (Babel — humanity's tower vs. God's mountain); **Psalm 48** (Zion as the joy of the earth); **Micah 4:1-3** (parallel vision — Isaiah and Micah share this oracle) |
+| Ch. 3-4 (Stripping) | **Ezekiel 16** (Jerusalem stripped of finery); **Genesis 3:21** (God clothing the naked — the canopy as re-clothing); **Exodus 13:21** (pillar of cloud/fire returns in 4:5) |
+| Ch. 5 (Vineyard) | **Psalm 80:8-16** (the vine brought out of Egypt); **Deuteronomy 32:32-33** (the vine of Sodom); **Song of Songs** (the beloved's vineyard — love language turned to judgment) |
+| Ch. 6 (Throne Room) | **Exodus 3** (Moses at the bush — "Who am I?"); **1 Kings 22** (Micaiah's throne vision); **Exodus 19:18** (Sinai's smoke and trembling) |
+| Ch. 7-9 (Immanuel) | **2 Samuel 7** (Davidic covenant — "your throne forever"); **Genesis 3:15** (the seed of the woman); **Numbers 24:17** (the star from Jacob); **Isaiah 1-6** (every failed leader creates the vacancy Immanuel fills) |
+| Ch. 10-12 (Stump) | **Isaiah 6:13** (the holy seed is the stump); **Ruth 4** (the line of Jesse); **Exodus 15** (the Song of Moses — ch. 12 echoes it as the new song of salvation) |
+
+Styled with a warm bronze accent (Historian's color). Expandable — each back-reference shows the source passage and explains the connection.
+
+#### "Points Toward" (Forward-References)
+Shows where these themes develop later — in Isaiah, in the New Testament, and in other biblical books:
+
+| Section | Points Toward |
+|---------|--------------|
+| Ch. 1 (Courtroom) | **Isaiah 41-45** (courtroom reconvenes — nations on trial); **Romans 8:1** ("no condemnation" — the verdict reversed); **Revelation 20** (the final courtroom) |
+| Ch. 2 (Mountain) | **Isaiah 25:6-8** (the feast on the mountain); **Hebrews 12:22** ("you have come to Mount Zion"); **Revelation 21:10** (the holy city descending) |
+| Ch. 3-4 (Stripping) | **Isaiah 61:10** (garments of salvation replace stripped finery); **Galatians 3:27** ("clothed with Christ"); **Revelation 7:9** (white robes) |
+| Ch. 5 (Vineyard) | **Isaiah 27:2-6** (the vineyard replanted — "I will water it every moment"); **John 15:1** ("I am the true vine"); **Matthew 21:33-46** (Jesus retells the vineyard parable) |
+| Ch. 6 (Throne Room) | **Isaiah 35:5, 42:7** (blind eyes opened — the commission reversed); **John 12:41** ("Isaiah saw his glory"); **Revelation 4:8** ("Holy, holy, holy" — the throne room continues) |
+| Ch. 7-9 (Immanuel) | **Isaiah 53** (the child-king becomes the suffering servant); **Matthew 1:23** (Immanuel fulfilled); **Luke 1:32-33** (the throne of David); **Matthew 4:15-16** (light in Galilee fulfilled) |
+| Ch. 10-12 (Stump) | **Isaiah 42-53** (the Servant as the shoot matured); **Romans 15:12** ("the root of Jesse"); **Revelation 5:5** (the Lion/Root of David); **Revelation 22:1-2** (the river and tree — Eden fully restored) |
+
+Styled with a warm amber accent. Expandable. Creates anticipation and shows the reader that Isaiah's themes are alive across the whole Bible.
+
+### Feature 8: Class Reading Marker (Instructor-Controlled Progress)
+
+This app is designed for a class setting. Instead of individual progress tracking, there is a **class-wide reading marker** controlled by the instructor:
+
+**How it works:**
+- The instructor (you) sets which section the class is currently studying
+- This is stored as a simple configuration value in the app's data
+- All readers see the same marker — a "We Are Here" indicator on the section grid
+- Sections before the current marker show as "completed" (available to review)
+- The current section is highlighted prominently — "Currently Studying"
+- Sections after the current marker show as "coming soon" (still accessible but visually muted)
+
+**How to update it:**
+- You change a single value in the data file (e.g., `currentSection: 3`)
+- Rebuild and republish the app
+- All readers instantly see the updated class position
+
+**Visual treatment:**
+- Completed sections: subtle checkmark, full color, accessible
+- Current section: glowing border, "Currently Studying" badge, prominent
+- Upcoming sections: slightly muted, "Coming Soon" label, still clickable for those who want to read ahead
+
+**Data type:**
+```
+ClassProgress {
+  currentSection: number,        // 1-7 for the current study section
+  currentModule: string,         // "big_picture" | "framework" | "verse_by_verse"
+  lastUpdated: string,           // Date string for when the class marker was moved
+  instructorNote?: string        // Optional brief note: "Focus on the chiasm this week"
+}
+```
+
+This keeps you in full control. When the class finishes section 3, you update the number to 4, rebuild, and publish. Everyone sees the class has moved forward. You can also add an optional instructor note — a brief message like "Focus on the vineyard parable this week" that appears on the section grid.
 
 ---
 
@@ -202,13 +254,13 @@ Each of the 7 sections contains 3 modules:
 - Scripture text in warm serif font (parchment styling)
 - Hebrew keyword analysis (gold-tinted buttons) with theological vocabulary tracking
 - Poetic device badges where applicable
-- New Testament Echoes panel (expandable cross-references)
+- "Builds On" panel — back-references to earlier Scripture (bronze accent, expandable)
+- "Points Toward" panel — forward-references to later Isaiah, NT, and other books (amber accent, expandable)
 - The Emotional Journey — Psychologist traces the feeling-path (teal accent)
 - 5 Common Misreadings with gentle corrections (warm red/orange accent)
 - "So What / Now What" panel (three cards: blue meaning → rose personal → amber action)
 - Reflection prompt with 5 options
 - Prayer prompt (Spiritual Director's violet accent)
-- "Looking Ahead" connection to the larger book
 
 ---
 
@@ -303,11 +355,32 @@ PerspectiveItem, StructuralLine, KeywordInsight, VerseAnalysis, KeyConcept
 }
 ```
 
-### New: LookingAhead
+### New: BackReference ("Builds On")
 ```
 {
-  connection: string,       // Where this theme develops later
-  preview: string           // Brief preview of what's coming
+  source_ref: string,       // e.g. "Deuteronomy 32"
+  label: string,            // e.g. "Song of Moses — the original covenant lawsuit"
+  connection: string        // How this source passage illuminates the current one
+}
+```
+
+### New: ForwardReference ("Points Toward")
+```
+{
+  target_ref: string,       // e.g. "John 15:1"
+  target_book: 'isaiah' | 'ot' | 'nt' | 'revelation',
+  label: string,            // e.g. "'I am the true vine' — Jesus reclaims the vineyard"
+  connection: string        // How the current passage develops into the target
+}
+```
+
+### New: ClassProgress
+```
+{
+  currentSection: number,          // 1-7 for the current study section
+  currentModule: string,           // "big_picture" | "framework" | "verse_by_verse"
+  lastUpdated: string,             // Date string
+  instructorNote?: string          // Optional: "Focus on the chiasm this week"
 }
 ```
 
@@ -342,8 +415,9 @@ Every color choice answers a question:
 | Emotional Journey | Teal/cyan accent — the Psychologist's space |
 | So What / Now What | Three cards: slate blue (meaning) → warm rose (personal) → warm amber (action) |
 | Prayer Prompts | Soft violet accent with generous whitespace — contemplative |
-| Cross-References | Slate blue cards with NT reference — scholarly but accessible |
-| Looking Ahead | Subtle forward-pointing panel, muted amber — anticipation |
+| "Builds On" References | Warm bronze cards — grounded in earlier Scripture |
+| "Points Toward" References | Warm amber cards — anticipation of fulfillment |
+| Class Reading Marker | Glowing section-colored border with "Currently Studying" badge |
 | Reflections | Warm rose accent with Heart icon — the safe space for honesty |
 | Genre Badge | Small labeled pill at section header — informational, not intrusive |
 | Poetic Device Badge | Small inline badge near affected verses — educational |
@@ -366,9 +440,12 @@ BOOK OVERVIEW (The Cathedral)
 ├── The Unified Question: "When everything you trusted falls apart, what remains?"
 └── Enter Sub-Book I: The Book of Judgment →
 
-SECTION GRID (7 sections with icons, colors, progress tracking)
-├── Completion indicators (checkmarks for finished sections)
-├── "Continue where you left off" prompt
+SECTION GRID (7 sections with icons, colors, class progress)
+├── Class Reading Marker — "We Are Here" indicator (instructor-controlled)
+├── Instructor Note (optional — e.g., "Focus on the chiasm this week")
+├── Completed sections: checkmark, full color
+├── Current section: glowing border, "Currently Studying" badge
+├── Upcoming sections: slightly muted, "Coming Soon" label, still accessible
 └── Select a section →
 
 STUDY VIEW (The Deep Dive)
@@ -394,13 +471,13 @@ STUDY VIEW (The Deep Dive)
      ├── Hebrew keywords (gold buttons → Word Study Modal)
      │    └── Theological Vocabulary tracking for recurring terms
      ├── Poetic Device badges (inline)
-     ├── New Testament Echoes (expandable cross-references)
+     ├── "Builds On" (back-references to earlier Scripture, bronze accent)
+     ├── "Points Toward" (forward-references to later Isaiah/NT, amber accent)
      ├── Emotional Journey (Psychologist's teal section)
      ├── 5 Common Misreadings (expandable, red/orange accent)
      ├── So What / Now What (three-card panel)
      ├── Reflection (5 options)
-     ├── Prayer Prompt (violet, contemplative space)
-     └── Looking Ahead (where these themes develop later)
+     └── Prayer Prompt (violet, contemplative space)
 ```
 
 ---
@@ -475,17 +552,18 @@ STUDY VIEW (The Deep Dive)
 │   │   ├── PoeticDeviceBadge.tsx  # Hebrew poetic device markers
 │   │   ├── VerseStudy.tsx         # Scripture text + keyword buttons
 │   │   ├── WordStudyModal.tsx     # Keyword deep dive + theological vocab
-│   │   ├── CrossReferencePanel.tsx # New Testament echoes
+│   │   ├── BuildsOnPanel.tsx       # Back-references to earlier Scripture
+│   │   ├── PointsTowardPanel.tsx  # Forward-references to later Isaiah/NT
 │   │   ├── EmotionalJourney.tsx   # Psychologist's emotional arc
 │   │   ├── MisreadingsPanel.tsx   # 5 common misreadings
 │   │   ├── SoWhatPanel.tsx        # What does this mean / So what / Now what
 │   │   ├── ReflectionPanel.tsx    # 5-option reflections
 │   │   ├── PrayerPrompt.tsx       # Spiritual Director's prayer invitation
-│   │   ├── LookingAhead.tsx       # Forward connection to later Isaiah
 │   │   ├── ReadingProgressBar.tsx # Scroll progress indicator
-│   │   └── SectionProgress.tsx    # Completion tracking
+│   │   └── ClassProgress.tsx      # Instructor-controlled class reading marker
 │   └── data/
 │       ├── book-overview.ts       # 5 sub-books metadata
+│       ├── class-progress.ts     # Instructor-controlled: current section, note
 │       ├── theological-terms.ts   # Recurring vocabulary across the book
 │       ├── isaiah-1.ts            # The Courtroom
 │       ├── isaiah-2.ts            # The Mountain and the Abyss
