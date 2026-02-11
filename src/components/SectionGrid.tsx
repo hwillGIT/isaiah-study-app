@@ -12,9 +12,9 @@ const sectionMeta = [
   { id: 2, title: 'The Mountain and the Abyss', subtitle: 'Two Visions', chapters: 'Chapter 2', emotionalArc: 'Awe → terror → disorientation', genre: 'Vision Oracle', color: 'slate' },
   { id: 3, title: 'The Stripping and the Canopy', subtitle: 'Stripped to Be Clothed', chapters: 'Chapters 3–4', emotionalArc: 'Loss → grief → re-covering', genre: 'Woe Oracle', color: 'amber' },
   { id: 4, title: 'The Vineyard Song', subtitle: 'The Heartbreak of God', chapters: 'Chapter 5', emotionalArc: 'Tenderness → betrayal → fury', genre: 'Love Song', color: 'purple' },
-  { id: 5, title: 'The Throne Room', subtitle: 'Undone and Remade', chapters: 'Chapter 6', emotionalArc: 'Terror → disintegration → purification → commission', genre: 'Throne Vision', color: 'yellow' },
-  { id: 6, title: 'The Immanuel Cycle', subtitle: 'God With Us in the Dark', chapters: 'Chapters 7–9', emotionalArc: 'Fear → refusal → sign → blazing light', genre: 'Sign Oracle', color: 'blue' },
-  { id: 7, title: 'The Stump and the Song', subtitle: 'What Grows from Ruin', chapters: 'Chapters 10–12', emotionalArc: 'Devastation → shoot → restoration → eruption of joy', genre: 'Salvation Hymn', color: 'green' },
+  { id: 5, title: 'The Throne Room', subtitle: 'Holy, Holy, Holy', chapters: 'Chapter 6', emotionalArc: 'Terror → cleansing → commission', genre: 'Throne Vision', color: 'yellow' },
+  { id: 6, title: 'The Immanuel Cycle', subtitle: 'God With Us', chapters: 'Chapters 7–9', emotionalArc: 'Crisis → sign → light breaking through', genre: 'Sign Oracle', color: 'blue' },
+  { id: 7, title: 'The Stump and the Song', subtitle: 'What Grows from Ruin', chapters: 'Chapters 10–12', emotionalArc: 'Devastation → shoot → restoration song', genre: 'Salvation Hymn', color: 'green' },
 ];
 
 const colorMap: Record<string, { border: string; bg: string; text: string; badge: string; glow: string }> = {

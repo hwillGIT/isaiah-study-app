@@ -7,11 +7,19 @@ A deep, interactive study app for the Book of Isaiah (starting with chapters 1-1
 **GitHub:** https://github.com/hwillGIT/isaiah-study-app
 
 ## Current State
-- Phase 1 MVP: Section 1 (Isaiah 1 - "The Courtroom") fully built with all three modules
+- Phase 1 COMPLETE: All 7 sections (Isaiah 1-12) fully built with all three modules each
 - Book Overview landing with 5 sub-books
-- Section Grid with class progress marker (instructor-controlled)
-- Sections 2-7 show as "Coming Soon" placeholders
+- Section Grid with class progress marker (instructor-controlled, currently set to Section 7)
 - Full UI/UX polish: breadcrumb navigation, collapsible sidebar, scroll progress, back-to-top, animated transitions, mini TOC, localStorage progress memory
+
+## All 7 Sections
+1. **The Courtroom** (Ch.1) — Covenant Lawsuit — red
+2. **The Mountain and the Abyss** (Ch.2) — Vision Oracle — slate
+3. **The Stripping and the Canopy** (Chs.3-4) — Woe Oracle — amber
+4. **The Vineyard Song** (Ch.5) — Love Song Turned Lament — purple
+5. **The Throne Room** (Ch.6) — Throne Vision / Call Narrative — yellow
+6. **The Immanuel Cycle** (Chs.7-9) — Sign Oracle — blue
+7. **The Stump and the Song** (Chs.10-12) — Salvation Hymn — green
 
 ## Architecture
 - **Frontend:** React + TypeScript + Vite
@@ -50,7 +58,13 @@ src/
     ├── book-overview.ts   # 5 sub-books metadata
     ├── class-progress.ts  # Instructor-controlled class position
     ├── sections-index.ts  # Section registry
-    └── isaiah-1.ts        # Section 1: The Courtroom (Chapter 1)
+    ├── isaiah-1.ts        # Section 1: The Courtroom (Chapter 1)
+    ├── isaiah-2.ts        # Section 2: The Mountain and the Abyss (Chapter 2)
+    ├── isaiah-3.ts        # Section 3: The Stripping and the Canopy (Chapters 3-4)
+    ├── isaiah-4.ts        # Section 4: The Vineyard Song (Chapter 5)
+    ├── isaiah-5.ts        # Section 5: The Throne Room (Chapter 6)
+    ├── isaiah-6.ts        # Section 6: The Immanuel Cycle (Chapters 7-9)
+    └── isaiah-7.ts        # Section 7: The Stump and the Song (Chapters 10-12)
 public/
 └── images/               # Instructor uploads (organized by section)
     ├── section-1/
