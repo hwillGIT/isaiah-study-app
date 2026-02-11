@@ -25,14 +25,14 @@ export const isaiah1: Section = {
       'Isaiah (called to speak truth to a deaf nation)',
       'The rulers and judges of Jerusalem (corrupt, complicit)',
     ],
-    whyItMatters: 'Understanding that Isaiah 1 is addressed to a prosperous, religious nation \u2014 not a pagan one \u2014 changes everything. This is not God confronting strangers. This is God confronting His own people who have kept all the forms of worship while abandoning its substance. The modern reader who attends church, serves on committees, and gives generously may find this chapter uncomfortably close to home.',
+    whyItMatters: 'Understanding that Isaiah 1 is addressed to a prosperous, religious nation \u2014 not a pagan one \u2014 changes everything. This is not God confronting strangers. This is God confronting God\'s own people who have kept all the forms of worship while abandoning its substance. The modern reader who attends church, serves on committees, and gives generously may find this chapter uncomfortably close to home.',
   },
 
   themes: [
     {
       theme: 'exodus',
       active: true,
-      connection: 'God references the exodus pattern \u2014 He raised and reared children (v.2), echoing the parent-child language of Deuteronomy. Israel\'s rebellion is framed as a child turning against the parent who rescued them from Egypt.',
+      connection: 'God references the exodus pattern \u2014 God raised and reared children (v.2), echoing the parent-child language of Deuteronomy. Israel\'s rebellion is framed as a child turning against the parent who rescued them from Egypt.',
     },
     {
       theme: 'zion_eden',
@@ -52,12 +52,12 @@ export const isaiah1: Section = {
   ],
 
   bigPicture: {
-    literaryContext: 'Isaiah 1 functions as the overture to the entire book \u2014 a concentrated preview of every major theme that will unfold across sixty-six chapters. Like the opening movement of a symphony, it introduces the melodies the listener will hear developed, inverted, and resolved over the course of the whole composition. The chapter employs the covenant lawsuit genre (r\u00eeb), summoning heaven and earth as witnesses to God\'s case against His people \u2014 a legal proceeding that echoes Moses\' final song in Deuteronomy 32. The emotional register moves from divine grief to prophetic fury to unexpected tenderness, establishing a pattern that will repeat throughout the book: accusation is never God\'s final word. Every theme is seeded here \u2014 the exodus memory of a parent raising children, Zion as the city that has fallen from faithfulness, the absence of a worthy leader, and the stubborn persistence of hope even in the midst of devastating critique. The chapter is deliberately designed to make the reader uncomfortable before offering hope, stripping away religious performance before extending the invitation of verse 18. To read Isaiah 1 well is to feel the ground shift beneath your own spiritual confidence \u2014 and then to hear, in the silence that follows, a voice that is grieved rather than contemptuous, and an offer that is staggering in its generosity.',
+    literaryContext: 'Isaiah 1 functions as the overture to the entire book \u2014 a concentrated preview of every major theme that will unfold across sixty-six chapters. Like the opening movement of a symphony, it introduces the melodies the listener will hear developed, inverted, and resolved over the course of the whole composition. The chapter employs the covenant lawsuit genre (r\u00eeb), summoning heaven and earth as witnesses to God\'s case against God\'s people \u2014 a legal proceeding that echoes Moses\' final song in Deuteronomy 32. The emotional register moves from divine grief to prophetic fury to unexpected tenderness, establishing a pattern that will repeat throughout the book: accusation is never God\'s final word. Every theme is seeded here \u2014 the exodus memory of a parent raising children, Zion as the city that has fallen from faithfulness, the absence of a worthy leader, and the stubborn persistence of hope even in the midst of devastating critique. The chapter is deliberately designed to make the reader uncomfortable before offering hope, stripping away religious performance before extending the invitation of verse 18. To read Isaiah 1 well is to feel the ground shift beneath your own spiritual confidence \u2014 and then to hear, in the silence that follows, a voice that is grieved rather than contemptuous, and an offer that is staggering in its generosity.',
 
     perspectives: [
       {
         role: 'Spiritual Director',
-        text: 'Notice the movement in this chapter: from external accusation to internal invitation. God does not begin with "you are beyond hope" but with "I raised you." The tension between religious performance and genuine encounter is the spiritual crisis of every serious believer \u2014 the person who shows up, serves faithfully, and slowly discovers that the activity has replaced the relationship it was meant to express. Where in your own worship do you sense God\'s grief rather than His approval?',
+        text: 'Notice the movement in this chapter: from external accusation to internal invitation. God does not begin with "you are beyond hope" but with "I raised you." The tension between religious performance and genuine encounter is the spiritual crisis of every serious believer \u2014 the person who shows up, serves faithfully, and slowly discovers that the activity has replaced the relationship it was meant to express. Where in your own worship do you sense God\'s grief rather than God\'s approval?',
       },
       {
         role: 'Pastoral Director',
@@ -151,7 +151,7 @@ export const isaiah1: Section = {
         reference: 'v.16-17',
         content: 'THE PIVOT \u2014 What God actually wants: cease evil, learn good, seek justice, defend the oppressed',
         indent: 4,
-        connection: 'The chiastic center \u2014 the fulcrum of the entire chapter. After stripping away every form of religious performance, God names what He has always wanted: justice, mercy, protection of the vulnerable. This is not a new demand but a return to the covenant\'s original purpose. Everything in the chapter builds toward this center and flows from it.',
+        connection: 'The chiastic center \u2014 the fulcrum of the entire chapter. After stripping away every form of religious performance, God names what has always been wanted: justice, mercy, protection of the vulnerable. This is not a new demand but a return to the covenant\'s original purpose. Everything in the chapter builds toward this center and flows from it.',
       },
       {
         label: 'D\'',
@@ -294,7 +294,7 @@ export const isaiah1: Section = {
             hebrew: '\u05E7\u05B0\u05D3\u05D5\u05B9\u05E9\u05C1 \u05D9\u05B4\u05E9\u05B0\u05C2\u05E8\u05B8\u05D0\u05B5\u05DC',
             transliteration: 'Qedosh Yisrael',
             definition: 'The Holy One of Israel \u2014 God\'s distinctive title in Isaiah',
-            significance: 'This title appears 26 times in Isaiah and is virtually unique to this book. It combines two realities that should not be able to coexist: absolute holiness (otherness, transcendence, consuming purity) and covenant intimacy ("of Israel" \u2014 bound to a specific people). The title is the theological engine of the entire book: the Holy God refuses to abandon His unholy people. The tension is never resolved by diminishing either the holiness or the intimacy.',
+            significance: 'This title appears 26 times in Isaiah and is virtually unique to this book. It combines two realities that should not be able to coexist: absolute holiness (otherness, transcendence, consuming purity) and covenant intimacy ("of Israel" \u2014 bound to a specific people). The title is the theological engine of the entire book: the Holy God refuses to abandon an unholy people. The tension is never resolved by diminishing either the holiness or the intimacy.',
           },
         ],
       },
@@ -345,7 +345,7 @@ export const isaiah1: Section = {
             hebrew: '\u05D6\u05B6\u05D1\u05B7\u05D7',
             transliteration: 'zebach',
             definition: 'A sacrifice, specifically a slaughtered animal offered to God',
-            significance: 'The devastating irony: these are the very sacrifices God commanded in Leviticus. God is not rejecting sacrifice as a category but sacrifice as a substitute for justice. The same God who instituted the sacrificial system now says "I have had enough." The system was meant to express relationship, not replace it. When ritual becomes a way to manage God rather than meet Him, the ritual itself becomes the offense.',
+            significance: 'The devastating irony: these are the very sacrifices God commanded in Leviticus. God is not rejecting sacrifice as a category but sacrifice as a substitute for justice. The same God who instituted the sacrificial system now says "I have had enough." The system was meant to express relationship, not replace it. When ritual becomes a way to manage God rather than meet God, the ritual itself becomes the offense.',
           },
         ],
       },
@@ -362,12 +362,12 @@ export const isaiah1: Section = {
       {
         verseNumber: '1:14',
         text: 'Your new moons and your appointed festivals my soul hates. They have become a burden to me, I am weary of bearing them.',
-        notes: 'The language of divine exhaustion: God is weary. The festivals He designed to be celebrations of relationship have become obligations that God endures rather than enjoys. The anthropomorphism is deliberate \u2014 Isaiah wants the reader to feel the weight of divine disappointment, not merely understand it intellectually.',
+        notes: 'The language of divine exhaustion: God is weary. The festivals God designed to be celebrations of relationship have become obligations that God endures rather than enjoys. The anthropomorphism is deliberate \u2014 Isaiah wants the reader to feel the weight of divine disappointment, not merely understand it intellectually.',
       },
       {
         verseNumber: '1:15',
         text: 'When you stretch out your hands, I will hide my eyes from you; even though you make many prayers, I will not listen; your hands are full of blood.',
-        notes: 'The climactic rejection: even prayer itself is refused. The image of outstretched hands \u2014 the posture of supplication \u2014 is subverted by the final phrase: "your hands are full of blood." The same hands raised to God are stained with injustice. God hiding His eyes is the reversal of the priestly blessing (Numbers 6:25: "The LORD make his face to shine upon you"). The covenant relationship has been functionally severed \u2014 not by God\'s absence but by the people\'s conduct.',
+        notes: 'The climactic rejection: even prayer itself is refused. The image of outstretched hands \u2014 the posture of supplication \u2014 is subverted by the final phrase: "your hands are full of blood." The same hands raised to God are stained with injustice. God hiding those divine eyes is the reversal of the priestly blessing (Numbers 6:25: "The LORD make his face to shine upon you"). The covenant relationship has been functionally severed \u2014 not by God\'s absence but by the people\'s conduct.',
       },
       {
         verseNumber: '1:16',
@@ -404,14 +404,14 @@ export const isaiah1: Section = {
             hebrew: '\u05E9\u05C1\u05B8\u05E0\u05B4\u05D9\u05DD',
             transliteration: 'shanim',
             definition: 'Scarlet, crimson \u2014 a double-dyed red produced from insect dye',
-            significance: 'Shanim refers to a double-dyed scarlet \u2014 the most permanent, penetrating dye in the ancient world. It could not be washed out. By choosing this specific image, God is acknowledging the depth and permanence of the stain before declaring that He will remove it. The transformation is not natural; it is supernatural. What human effort cannot undo, God offers to reverse.',
+            significance: 'Shanim refers to a double-dyed scarlet \u2014 the most permanent, penetrating dye in the ancient world. It could not be washed out. By choosing this specific image, God is acknowledging the depth and permanence of the stain before declaring the stain will be removed. The transformation is not natural; it is supernatural. What human effort cannot undo, God offers to reverse.',
           },
           {
             word: 'snow',
             hebrew: '\u05E9\u05C1\u05B6\u05DC\u05B6\u05D2',
             transliteration: 'sheleg',
             definition: 'Snow \u2014 representing the most complete whiteness imaginable',
-            significance: 'In the arid Near East, fresh snow on the mountains represented absolute purity \u2014 untouched, unblemished, radiantly white. The contrast between shanim (the most permanent stain) and sheleg (the most complete whiteness) is deliberate: God does not offer partial cleaning or gradual improvement. He offers total transformation \u2014 the permanent made impermanent, the deepest red made the purest white.',
+            significance: 'In the arid Near East, fresh snow on the mountains represented absolute purity \u2014 untouched, unblemished, radiantly white. The contrast between shanim (the most permanent stain) and sheleg (the most complete whiteness) is deliberate: God does not offer partial cleaning or gradual improvement. God offers total transformation \u2014 the permanent made impermanent, the deepest red made the purest white.',
           },
         ],
       },
@@ -458,7 +458,7 @@ export const isaiah1: Section = {
       {
         verseNumber: '1:24',
         text: 'Therefore says the Sovereign, the LORD of hosts, the Mighty One of Israel: Ah, I will pour out my wrath on my enemies, and avenge myself on my foes!',
-        notes: 'The accumulation of divine titles is significant: "the Sovereign" (ha-Adon), "the LORD of hosts" (YHWH Tseva\'ot), "the Mighty One of Israel" (Avir Yisrael). Each title emphasizes a different dimension of God\'s authority. The "Ah" (hoy) is the same exclamation used to begin a funeral lament \u2014 God grieves as He acts. The enemies and foes are not foreign nations but His own people who have become adversaries through their injustice.',
+        notes: 'The accumulation of divine titles is significant: "the Sovereign" (ha-Adon), "the LORD of hosts" (YHWH Tseva\'ot), "the Mighty One of Israel" (Avir Yisrael). Each title emphasizes a different dimension of God\'s authority. The "Ah" (hoy) is the same exclamation used to begin a funeral lament \u2014 God grieves while acting. The enemies and foes are not foreign nations but God\'s own people who have become adversaries through their injustice.',
       },
       {
         verseNumber: '1:25',
@@ -522,7 +522,7 @@ export const isaiah1: Section = {
       {
         sourceRef: 'Hosea 4:1-3',
         label: 'God\'s Case Against Israel \u2014 Parallel Prophetic Lawsuit',
-        connection: 'Hosea, Isaiah\'s near-contemporary, files a parallel r\u00eeb against the Northern Kingdom: "The LORD has an indictment against the inhabitants of the land. There is no faithfulness or loyalty, and no knowledge of God in the land" (Hosea 4:1). Both prophets use the same legal genre, the same accusation (lack of knowledge/yada), and the same devastating conclusion: the people who should know God best know Him least.',
+        connection: 'Hosea, Isaiah\'s near-contemporary, files a parallel r\u00eeb against the Northern Kingdom: "The LORD has an indictment against the inhabitants of the land. There is no faithfulness or loyalty, and no knowledge of God in the land" (Hosea 4:1). Both prophets use the same legal genre, the same accusation (lack of knowledge/yada), and the same devastating conclusion: the people who should know God best know God least.',
       },
       {
         sourceRef: 'Exodus 19-20',
@@ -584,7 +584,7 @@ export const isaiah1: Section = {
       {
         misreading: 'The "scarlet to snow" image is about feeling better',
         correction: 'The transformation described in v.18 is not emotional relief but ontological change \u2014 a fundamental transformation of identity. Scarlet dye penetrates the fabric at the molecular level; it does not sit on the surface. The offer is not "you will feel clean" but "you will be clean." This is identity language, not therapy language.',
-        whyItMatters: 'Reducing v.18 to emotional comfort misses the radicality of the offer. God is not promising that the guilt feelings will go away. He is promising that the guilt itself will be removed \u2014 the stain, not just the awareness of the stain. This distinction matters for anyone who has experienced the difference between feeling forgiven and being forgiven.',
+        whyItMatters: 'Reducing v.18 to emotional comfort misses the radicality of the offer. God is not promising that the guilt feelings will go away. God is promising that the guilt itself will be removed \u2014 the stain, not just the awareness of the stain. This distinction matters for anyone who has experienced the difference between feeling forgiven and being forgiven.',
       },
     ],
 
@@ -622,31 +622,31 @@ export const isaiah1: Section = {
       options: [
         {
           text: 'I\'m left with the offer. Despite everything, verse 18 is what stays with me. The accusation was real but the invitation is louder.',
-          insight: 'Mid-trial, the prosecutor offers acquittal. That is what happened in verse 18 \u2014 scarlet to snow, crimson to wool, the most permanent stain meeting the most total cleansing. And you heard it not as a footnote but as the loudest word in the chapter. Every accusation \u2014 the rejected sacrifices, the dismissed festivals, the blood-stained hands \u2014 builds toward this pivot. Grace is not the afterthought; it is the destination. You are drawn to the offer not because you missed the indictment but because you sat through every word of it, and the offer turned out to be the point. That is not spiritual bypassing. That is your heart recognizing the architecture: accusation that exists for the sake of restoration. Let the offer do its work. You do not need to earn it.',
+          insight: 'Mid-trial, the prosecutor offers acquittal. Scarlet to snow, crimson to wool \u2014 the most permanent stain meeting the most total cleansing. You heard it not as a footnote but as the loudest word in the chapter. Every accusation builds toward this pivot. Grace is not the afterthought; it is the destination. You are drawn to the offer not because you missed the indictment but because you sat through every word of it, and the offer turned out to be the point. Let it do its work. You do not need to earn it.',
         },
         {
           text: 'I\'m left with the weight. The accusation hit too close to home. I need time before I can hear the offer.',
-          insight: 'Don\'t rush toward verse 18. The accusation named something real \u2014 a distance you have been managing, a gap between your public worship and your private reality \u2014 and genuine confrontation requires time to settle into the bones before anything can be built on top of it. The pressure to "receive the grace" before the painful word has finished speaking can itself become performance, another way of skipping past truth to reach comfort. Your need for time is not resistance. It is respect \u2014 for the weight of what was named, for the slow work of letting truth land in the body before reaching for resolution. God is patient enough to wait while you sit with what is real. The weight is not punishment. It is gravity \u2014 and gravity is the only ground where genuine encounter happens.',
+          insight: 'Don\'t rush toward verse 18. The accusation named something real \u2014 a gap between your public worship and your private reality \u2014 and genuine confrontation requires time to settle into the bones. The pressure to "receive the grace" before the painful word has finished speaking can itself become performance. Your need for time is not resistance. It is respect \u2014 for the weight of what was named, for the slow work of letting truth land before reaching for resolution. The weight is not punishment. It is gravity \u2014 and gravity is where genuine encounter happens.',
         },
         {
           text: 'I\'m left with a question: do I actually want to change, or do I just want to feel better about not changing?',
-          insight: 'Self-deception does not typically interrogate itself. The fact that you can ask whether your desire for change is genuine \u2014 that you can distinguish between wanting transformation and wanting the feeling of transformation \u2014 is itself evidence that something deeper than comfort-seeking is at work. The people Isaiah addressed brought sacrifices with full confidence the system was working. You, by contrast, are sitting with uncertainty. And uncertainty, uncomfortable as it is, is closer to honesty than certainty ever was. Hold the question. Let it walk with you into next week, into the next worship service, into the next moment when you feel the gap between wanting to change and wanting to feel better about staying the same. The question does not need an answer tonight. It needs your attention.',
+          insight: 'Self-deception does not typically interrogate itself. That you can distinguish between wanting transformation and wanting the feeling of transformation is itself evidence that something deeper than comfort-seeking is at work. The people Isaiah addressed brought sacrifices with full confidence. You are sitting with uncertainty. And uncertainty is closer to honesty than certainty ever was. Hold the question. Let it walk with you into next week, into the next moment when the gap opens between wanting to change and wanting to feel better about staying the same. It does not need an answer tonight. It needs your attention.',
         },
         {
           text: 'I\'m left with verse 17. Not the offer, not the accusation, but the command: seek justice, rescue the oppressed. That\'s what I need to do.',
-          insight: 'Whose orphan? Whose widow? Which oppressed person in your actual neighborhood, your workplace, your congregation has been waiting while you perfected your worship? The chapter\'s architecture points every accusation inward toward a single center \u2014 and that center is not a doctrine but a person with a name and an address. Seek justice. Rescue the oppressed. Defend the orphan. Every rejected sacrifice, every dismissed festival was supposed to produce this. When it didn\'t, God rejected the whole system. But let the action flow from verse 18, not from guilt alone. Justice sustained by the experience of grace has roots. Justice driven by shame burns fast and burns out. The chapter holds both the command and the offer \u2014 and so must you.',
+          insight: 'Whose orphan? Whose widow? Which oppressed person in your actual neighborhood, your workplace, your congregation has been waiting while you perfected your worship? The chapter\'s architecture points every accusation toward a single center \u2014 not a doctrine but a person with a name and an address. Seek justice. Rescue the oppressed. But let the action flow from verse 18, not from guilt alone. Justice sustained by grace has roots. Justice driven by shame burns fast and burns out. The chapter holds both the command and the offer \u2014 and so must you.',
         },
         {
           text: 'I\'m left with fear. "If you refuse and rebel, you shall be devoured by the sword." The stakes are real and I feel them.',
-          insight: 'The tightness in your chest. The impulse to close the book. That is not the opposite of faith \u2014 it is faith\'s first language, the raw recognition that this courtroom is not a metaphor and the verdict is not theoretical. You are afraid because you understood the text correctly, because you refused to domesticate it. But hold the distinction: between the fear that paralyzes \u2014 servile terror that sees only judgment \u2014 and the fear that mobilizes, the awe that trembles because the relationship matters too much for carelessness. Your fear is closer to the second kind than you think. You are afraid because you care. And the chapter, finding you afraid, points not toward the sword but toward the snow. Let the fear drive you toward the offer, not away from it.',
+          insight: 'The tightness in your chest. The impulse to close the book. You are afraid because you understood the text correctly \u2014 this courtroom is not a metaphor and the verdict is not theoretical. But hold the distinction: between fear that paralyzes and fear that mobilizes, the awe that trembles because the relationship matters too much for carelessness. Your fear is closer to the second kind than you think. You are afraid because you care. And the chapter, finding you afraid, points not toward the sword but toward the snow. Let the fear drive you toward the offer, not away from it.',
         },
         {
           text: 'I\'m left with gratitude. Not because the chapter was easy, but because God cared enough to confront. Indifference would have been worse.',
-          insight: 'If a friend cared enough to confront you honestly, you would call it love. How much more when the God who summoned heaven and earth as witnesses, who constructed a chiastic argument with the precision of a master poet, holds the accusation and the offer in the same breath? Indifference would have been silence \u2014 no prophets, no courtroom, no verse 18. The confrontation itself is evidence of investment. What you feel is not generic warmth but the specific, costly gratitude of someone seen at their worst and offered restoration instead of dismissal. This is the trust that transforms every honest relationship \u2014 the marriage where hard truth deepens the bond, the friendship where someone said what was uncomfortable. Your gratitude is not despite the confrontation. It is because of it.',
+          insight: 'If a friend cared enough to confront you honestly, you would call it love. How much more when the God who summoned heaven and earth as witnesses, who constructed a chiastic argument with the precision of a master poet, holds the accusation and the offer in the same breath? Indifference would have been silence \u2014 no prophets, no courtroom, no verse 18. What you feel is not generic warmth but the specific gratitude of someone seen at their worst and offered restoration instead of dismissal. Your gratitude is not despite the confrontation. It is because of it.',
         },
         {
           text: 'I\'m left with silence. I don\'t have words. I just want to sit here for a while.',
-          insight: 'Then sit. The accusation and the offer, the fire and the snow, the courtroom and the open door \u2014 they are all here in the same chapter, and your soul has been addressed more deeply than language can hold. This is not emptiness. This is fullness. There is a mode of knowing that operates below words, in the breath, in the weight of remaining in the room when every instinct says to analyze and move on. Verse 18 does its deepest work not as a concept to be understood but as an offer to be inhabited \u2014 and inhabiting requires the kind of stillness you are choosing right now. Let the silence hold what your words cannot.',
+          insight: 'Then sit. The accusation and the offer, the fire and the snow, the courtroom and the open door \u2014 they are all here, and your soul has been addressed more deeply than language can hold. This is not emptiness. This is fullness. There is a mode of knowing that operates below words, in the breath, in the weight of remaining when every instinct says to analyze and move on. Verse 18 does its deepest work not as a concept but as an offer to be inhabited. Let the silence hold what your words cannot.',
         },
       ],
     },
