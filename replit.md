@@ -67,6 +67,12 @@ public/
 - Hebrew poetic devices highlighted — Isaiah is poetry, not prose
 - 7 Soul Reflection options (not 5) for broader emotional range
 
+## Writing Style
+- All soul reflection insights and pastoral commentary follow the Homiletic Style Guide (HOMILETIC_STYLE_GUIDE.md)
+- 17 cadence tools drawn from biblical authors (Isaiah, Psalms, Paul, Ecclesiastes, Jesus, Jeremiah)
+- Anti-patterns to avoid: "This is..." openers, uniform sentence length, naming before showing, academic throat-clearing
+- Rotation principle: no two consecutive insights should use the same cadence tool
+
 ## How to Add New Content
 1. Create new data file in src/data/ (e.g., isaiah-2.ts)
 2. Import and register in src/main.tsx
