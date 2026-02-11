@@ -65,7 +65,7 @@ export default function SectionGrid({ onSelectSection, onBack }: SectionGridProp
               onClick={() => onSelectSection(sec.id)}
               className={`glass-panel rounded-2xl p-6 cursor-pointer transition-all duration-300 border-l-4 ${colors.border} ${
                 isCurrent ? `animate-glow shadow-lg ${colors.glow}` : ''
-              } ${isUpcoming ? 'opacity-70' : ''} hover:scale-[1.01] hover:opacity-100`}
+              } ${isUpcoming ? 'opacity-70' : ''} hover:scale-[1.01] hover:opacity-100 hover:shadow-lg ${colors.glow}`}
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { SoulReflection as SoulReflectionType } from '../types';
 import { contentColors } from '../colors';
 import { Heart } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import AnimatedCollapse from './AnimatedCollapse';
 
 interface SoulReflectionProps {
   reflection: SoulReflectionType;
@@ -31,11 +33,16 @@ export default function SoulReflection({ reflection }: SoulReflectionProps) {
             <div className="p-4">
               <p className="text-gray-200 italic">"{option.text}"</p>
             </div>
-            {expandedOption === i && (
-              <div className="px-5 pb-5 pt-2 bg-rose-900/10 border-t border-rose-400/10">
+            <AnimatedCollapse isOpen={expandedOption === i}>
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
+                className="px-5 pb-5 pt-2 bg-rose-900/10 border-t border-rose-400/10"
+              >
                 <p className="text-gray-300 text-sm leading-relaxed">{option.insight}</p>
-              </div>
-            )}
+              </motion.div>
+            </AnimatedCollapse>
           </div>
         ))}
       </div>

@@ -5,6 +5,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 import ThemeTracker from './ThemeTracker';
 import ImageGallery from './ImageGallery';
 import SoulReflection from './SoulReflection';
+import AnimatedCollapse from './AnimatedCollapse';
 
 interface BigPictureViewProps {
   section: Section;
@@ -32,7 +33,7 @@ export default function BigPictureView({ section }: BigPictureViewProps) {
             <ChevronDown className="text-amber-400" size={20} />
           )}
         </button>
-        {contextOpen && (
+        <AnimatedCollapse isOpen={contextOpen}>
           <div className="px-5 pb-5 space-y-3 border-t border-amber-700/30 pt-4">
             <div>
               <div className="text-xs uppercase tracking-wider text-amber-500/70 mb-1">Political Situation</div>
@@ -53,7 +54,7 @@ export default function BigPictureView({ section }: BigPictureViewProps) {
               <p className="text-gray-300 text-sm">{historicalContext.whyItMatters}</p>
             </div>
           </div>
-        )}
+        </AnimatedCollapse>
       </div>
 
       <div className="glass-panel rounded-xl p-6">
@@ -69,7 +70,7 @@ export default function BigPictureView({ section }: BigPictureViewProps) {
             return (
               <div
                 key={i}
-                className={`glass-panel rounded-xl p-5 border-l-4 ${colors.border}`}
+                className={`glass-panel rounded-xl p-5 border-l-4 ${colors.border} transition-all duration-300 hover:scale-[1.01] hover:brightness-110 hover:shadow-lg`}
               >
                 <div className={`text-sm font-medium ${colors.icon} mb-2`}>
                   {colors.label}

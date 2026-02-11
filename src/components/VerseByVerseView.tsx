@@ -1,14 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Section, KeywordInsight, BackReference, ForwardReference, Misreading, CrossReference } from '../types';
 import { contentColors } from '../colors';
 import { ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 import WordStudyModal from './WordStudyModal';
 import ImageGallery from './ImageGallery';
 import SoulReflection from './SoulReflection';
+import AnimatedCollapse from './AnimatedCollapse';
 
 interface VerseByVerseViewProps {
   section: Section;
 }
+
+const tocSections = [
+  { id: 'section-scripture', label: 'Scripture' },
+  { id: 'section-builds-on', label: 'Builds On' },
+  { id: 'section-points-toward', label: 'Points Toward' },
+  { id: 'section-emotional', label: 'Emotional Journey' },
+  { id: 'section-misreadings', label: 'Misreadings' },
+  { id: 'section-so-what', label: 'So What / Now What' },
+  { id: 'section-cross-refs', label: 'Cross References' },
+  { id: 'section-soul-reflection', label: 'Soul Reflection' },
+  { id: 'section-prayer', label: 'Prayer Prompt' },
+];
 
 export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
   const [selectedKeyword, setSelectedKeyword] = useState<KeywordInsight | null>(null);
@@ -18,12 +31,65 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
   const [showBuildsOn, setShowBuildsOn] = useState(true);
   const [showPointsToward, setShowPointsToward] = useState(true);
   const [expandedCrossRefs, setExpandedCrossRefs] = useState<number | null>(null);
+  const [activeSection, setActiveSection] = useState<string>('section-scripture');
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-80px 0px -60% 0px',
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    tocSections.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   const { verseByVerse, images } = section;
 
   return (
     <div className="space-y-8">
-      <div className={`${contentColors.scripture} rounded-xl p-6 border space-y-4`}>
+      <div
+        ref={navRef}
+        className="sticky top-16 z-20 glass-panel rounded-xl px-3 py-2 overflow-x-auto scrollbar-hide"
+      >
+        <div className="flex gap-2 min-w-max">
+          {tocSections.map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className={`text-xs px-3 py-1.5 rounded-full whitespace-nowrap transition-all duration-200 cursor-pointer ${
+                activeSection === id
+                  ? 'bg-amber-500/20 text-amber-200 border border-amber-500/40'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-white/5 border border-transparent'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div id="section-scripture" className={`${contentColors.scripture} rounded-xl p-6 border space-y-4`}>
         {verseByVerse.verses.map((verse, i) => (
           <div key={i} className="space-y-2">
             <p className="scripture-text text-lg leading-relaxed text-gray-200">
@@ -67,7 +133,7 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
       </div>
 
       {verseByVerse.buildsOn.length > 0 && (
-        <div className={`${contentColors.buildsOn} border-l-4 rounded-r-xl overflow-hidden`}>
+        <div id="section-builds-on" className={`${contentColors.buildsOn} border-l-4 rounded-r-xl overflow-hidden`}>
           <button
             className="w-full flex items-center justify-between p-5 text-left cursor-pointer"
             onClick={() => setShowBuildsOn(!showBuildsOn)}
@@ -75,7 +141,7 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
             <h3 className="text-lg font-semibold text-amber-200">Builds On</h3>
             {showBuildsOn ? <ChevronUp className="text-amber-400" size={18} /> : <ChevronDown className="text-amber-400" size={18} />}
           </button>
-          {showBuildsOn && (
+          <AnimatedCollapse isOpen={showBuildsOn}>
             <div className="px-5 pb-5 space-y-3">
               {verseByVerse.buildsOn.map((ref: BackReference, i: number) => (
                 <div
@@ -90,20 +156,20 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
                     </div>
                     {expandedBuildsOn === i ? <ChevronUp size={16} className="text-gray-400" /> : <ChevronDown size={16} className="text-gray-400" />}
                   </div>
-                  {expandedBuildsOn === i && (
+                  <AnimatedCollapse isOpen={expandedBuildsOn === i}>
                     <div className="px-3 pb-3 pt-1 border-t border-amber-700/20">
                       <p className="text-sm text-gray-300">{ref.connection}</p>
                     </div>
-                  )}
+                  </AnimatedCollapse>
                 </div>
               ))}
             </div>
-          )}
+          </AnimatedCollapse>
         </div>
       )}
 
       {verseByVerse.pointsToward.length > 0 && (
-        <div className={`${contentColors.pointsToward} border-l-4 rounded-r-xl overflow-hidden`}>
+        <div id="section-points-toward" className={`${contentColors.pointsToward} border-l-4 rounded-r-xl overflow-hidden`}>
           <button
             className="w-full flex items-center justify-between p-5 text-left cursor-pointer"
             onClick={() => setShowPointsToward(!showPointsToward)}
@@ -111,7 +177,7 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
             <h3 className="text-lg font-semibold text-amber-100">Points Toward</h3>
             {showPointsToward ? <ChevronUp className="text-amber-300" size={18} /> : <ChevronDown className="text-amber-300" size={18} />}
           </button>
-          {showPointsToward && (
+          <AnimatedCollapse isOpen={showPointsToward}>
             <div className="px-5 pb-5 space-y-3">
               {verseByVerse.pointsToward.map((ref: ForwardReference, i: number) => (
                 <div
@@ -129,27 +195,27 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
                       {expandedPointsToward === i ? <ChevronUp size={16} className="text-gray-400" /> : <ChevronDown size={16} className="text-gray-400" />}
                     </div>
                   </div>
-                  {expandedPointsToward === i && (
+                  <AnimatedCollapse isOpen={expandedPointsToward === i}>
                     <div className="px-3 pb-3 pt-1 border-t border-amber-600/20">
                       <p className="text-sm text-gray-300">{ref.connection}</p>
                     </div>
-                  )}
+                  </AnimatedCollapse>
                 </div>
               ))}
             </div>
-          )}
+          </AnimatedCollapse>
         </div>
       )}
 
       {verseByVerse.emotionalJourney && (
-        <div className={`${contentColors.emotional} border-l-4 glass-panel rounded-r-xl p-6`}>
+        <div id="section-emotional" className={`${contentColors.emotional} border-l-4 glass-panel rounded-r-xl p-6`}>
           <h3 className="text-lg font-semibold text-teal-300 mb-3">Emotional Journey</h3>
           <p className="text-gray-300 leading-relaxed">{verseByVerse.emotionalJourney}</p>
         </div>
       )}
 
       {verseByVerse.misreadings.length > 0 && (
-        <div className={`${contentColors.misreadings} border-l-4 glass-panel rounded-r-xl p-6 space-y-4`}>
+        <div id="section-misreadings" className={`${contentColors.misreadings} border-l-4 glass-panel rounded-r-xl p-6 space-y-4`}>
           <h3 className="text-lg font-semibold text-orange-300">Common Misreadings</h3>
           {verseByVerse.misreadings.map((mr: Misreading, i: number) => (
             <div
@@ -161,7 +227,7 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
                 <p className="text-sm text-orange-200 font-medium">"{mr.misreading}"</p>
                 {expandedMisreadings === i ? <ChevronUp size={16} className="text-gray-400" /> : <ChevronDown size={16} className="text-gray-400" />}
               </div>
-              {expandedMisreadings === i && (
+              <AnimatedCollapse isOpen={expandedMisreadings === i}>
                 <div className="px-4 pb-4 space-y-2 border-t border-orange-500/20 pt-3">
                   <div>
                     <div className="text-xs uppercase tracking-wider text-orange-500/70 mb-1">Actually</div>
@@ -172,13 +238,13 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
                     <p className="text-sm text-gray-300">{mr.whyItMatters}</p>
                   </div>
                 </div>
-              )}
+              </AnimatedCollapse>
             </div>
           ))}
         </div>
       )}
 
-      <div>
+      <div id="section-so-what">
         <h3 className="text-lg font-semibold text-gray-200 mb-4">So What / Now What</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="glass-panel rounded-xl p-5 border-t-2 border-slate-400">
@@ -197,7 +263,7 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
       </div>
 
       {verseByVerse.crossReferences.length > 0 && (
-        <div className="glass-panel rounded-xl p-6 space-y-4">
+        <div id="section-cross-refs" className="glass-panel rounded-xl p-6 space-y-4">
           <div className="flex items-center gap-2">
             <ExternalLink className="text-blue-400" size={18} />
             <h3 className="text-lg font-semibold text-gray-200">Cross References & NT Echoes</h3>
@@ -217,11 +283,11 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
                   </div>
                   {expandedCrossRefs === i ? <ChevronUp size={16} className="text-gray-400" /> : <ChevronDown size={16} className="text-gray-400" />}
                 </div>
-                {expandedCrossRefs === i && (
+                <AnimatedCollapse isOpen={expandedCrossRefs === i}>
                   <div className="px-3 pb-3 pt-1 border-t border-blue-500/20">
                     <p className="text-sm text-gray-300">{ref.connection}</p>
                   </div>
-                )}
+                </AnimatedCollapse>
               </div>
             ))}
           </div>
@@ -230,9 +296,11 @@ export default function VerseByVerseView({ section }: VerseByVerseViewProps) {
 
       {images && <ImageGallery images={images} />}
 
-      <SoulReflection reflection={verseByVerse.soulReflection} />
+      <div id="section-soul-reflection">
+        <SoulReflection reflection={verseByVerse.soulReflection} />
+      </div>
 
-      <div className={`${contentColors.prayerPrompt} border-l-4 rounded-r-xl p-8 space-y-4`}>
+      <div id="section-prayer" className={`${contentColors.prayerPrompt} border-l-4 rounded-r-xl p-8 space-y-4`}>
         <h3 className="text-lg font-semibold text-violet-300">Prayer Prompt</h3>
         <p className="text-gray-200 leading-relaxed scripture-text text-lg italic">
           {verseByVerse.prayerPrompt.prompt}

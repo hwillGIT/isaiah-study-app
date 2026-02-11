@@ -8,6 +8,18 @@ interface BookOverviewProps {
 
 const romanNumerals = ['I', 'II', 'III', 'IV', 'V'];
 
+const glowColors: Record<string, string> = {
+  'from-red-800': 'hover:shadow-red-500/20',
+  'from-slate-600': 'hover:shadow-slate-400/20',
+  'from-amber-800': 'hover:shadow-amber-500/20',
+  'from-gray-600': 'hover:shadow-gray-400/20',
+  'from-indigo-900': 'hover:shadow-indigo-500/20',
+};
+
+function getGlowClass(colorFrom: string): string {
+  return glowColors[colorFrom] || 'hover:shadow-white/10';
+}
+
 export default function BookOverview({ onSelectSubBook }: BookOverviewProps) {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12 space-y-10">
@@ -31,6 +43,7 @@ export default function BookOverview({ onSelectSubBook }: BookOverviewProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {subBooks.map((book, i) => {
           const isAvailable = book.available;
+          const glow = getGlowClass(book.colorFrom);
 
           return (
             <div
@@ -38,7 +51,7 @@ export default function BookOverview({ onSelectSubBook }: BookOverviewProps) {
               onClick={() => isAvailable && onSelectSubBook()}
               className={`glass-panel rounded-2xl overflow-hidden transition-all duration-300 ${
                 isAvailable
-                  ? 'cursor-pointer hover:shadow-lg hover:shadow-white/10 hover:scale-[1.02]'
+                  ? `cursor-pointer hover:shadow-lg ${glow} hover:scale-[1.02]`
                   : 'opacity-60 cursor-default'
               } ${i === 0 ? 'md:col-span-2 lg:col-span-1' : ''}`}
             >

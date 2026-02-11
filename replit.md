@@ -11,10 +11,12 @@ A deep, interactive study app for the Book of Isaiah (starting with chapters 1-1
 - Book Overview landing with 5 sub-books
 - Section Grid with class progress marker (instructor-controlled)
 - Sections 2-7 show as "Coming Soon" placeholders
+- Full UI/UX polish: breadcrumb navigation, collapsible sidebar, scroll progress, back-to-top, animated transitions, mini TOC, localStorage progress memory
 
 ## Architecture
 - **Frontend:** React + TypeScript + Vite
 - **Styling:** Tailwind CSS (CDN) with glass-panel aesthetic
+- **Animations:** framer-motion (page transitions, accordion, tab indicators, soul reflection reveals)
 - **Fonts:** Crimson Pro (scripture), Inter (UI)
 - **Icons:** lucide-react
 - **Content:** Static data files in src/data/
@@ -24,21 +26,26 @@ A deep, interactive study app for the Book of Isaiah (starting with chapters 1-1
 ```
 src/
 ├── main.tsx              # Entry point
-├── App.tsx               # View state navigation (overview/sections/study)
+├── App.tsx               # View state navigation + localStorage progress + layout
 ├── types.ts              # All TypeScript interfaces
 ├── colors.ts             # Functional color system constants
 ├── components/
 │   ├── BookOverview.tsx   # 5 sub-books landing page
 │   ├── SectionGrid.tsx    # 7 sections with class progress
-│   ├── StudyView.tsx      # Module tabs (Big Picture / Framework / Verse by Verse)
+│   ├── StudyView.tsx      # Module tabs with animated indicator + sidebar layout
 │   ├── BigPictureView.tsx # Historical context, perspectives, themes
 │   ├── FrameworkView.tsx  # Chiastic structure, poetic devices
-│   ├── VerseByVerseView.tsx # Scripture text, keywords, cross-refs, misreadings
-│   ├── SoulReflection.tsx # 7-option emotional reflection panels
+│   ├── VerseByVerseView.tsx # Scripture text, keywords, cross-refs, mini TOC
+│   ├── SoulReflection.tsx # 7-option emotional reflection with reveal animation
 │   ├── ImageGallery.tsx   # PNG/SVG/PDF gallery with lightbox (instructor uploads)
 │   ├── WordStudyModal.tsx # Hebrew keyword deep dive modal
 │   ├── ThemeTracker.tsx   # 4 interpretive thread badges
-│   └── GenreBadge.tsx     # Literary genre identification
+│   ├── GenreBadge.tsx     # Literary genre identification
+│   ├── Breadcrumb.tsx     # Sticky breadcrumb navigation bar
+│   ├── Sidebar.tsx        # Collapsible section sidebar (desktop + mobile)
+│   ├── ScrollProgress.tsx # Thin scroll progress bar at top
+│   ├── BackToTop.tsx      # Floating back-to-top button
+│   └── AnimatedCollapse.tsx # Reusable smooth accordion animation
 └── data/
     ├── book-overview.ts   # 5 sub-books metadata
     ├── class-progress.ts  # Instructor-controlled class position
@@ -58,6 +65,19 @@ public/
 - **Soul Reflections:** 7 options per section, all treated with equal dignity
 - **Class Progress:** Instructor updates currentSection in class-progress.ts and republishes
 - **Image Gallery:** Supports PDF, SVG, PNG — instructor drops files in public/images/section-N/
+
+## UI/UX Features
+- **Breadcrumb Navigation:** Sticky bar showing full path (Isaiah > Book of Judgment > Section > Module), each segment clickable
+- **Collapsible Sidebar:** Desktop: narrow with expand-on-hover; Mobile: hamburger slide-out overlay
+- **Page Transitions:** framer-motion AnimatePresence fade+slide between views and module tabs
+- **Animated Tab Indicator:** Smooth sliding pill using framer-motion layoutId
+- **Smooth Accordions:** All expandable sections animate height smoothly via AnimatedCollapse
+- **Scroll Progress Bar:** Thin colored bar at page top showing scroll position, section-color-coded
+- **Back to Top Button:** Floating glass button appears on scroll, smooth-scrolls up
+- **Mini Table of Contents:** Sticky horizontal nav in Verse by Verse view with IntersectionObserver active highlighting
+- **Hover Effects:** Subtle glow/lift on sub-book cards, section cards, perspective panels
+- **Soul Reflection Reveal:** Insights fade and slide in instead of snapping
+- **Reading Progress Memory:** localStorage persists view/section/module, restores on page load
 
 ## User Preferences
 - NRSV translation
@@ -83,6 +103,11 @@ public/
 1. Drop PNG, SVG, or PDF files into public/images/section-N/
 2. Add entries to the section's `images` array in the data file
 3. Rebuild and republish
+
+## Technical Notes
+- HMR disabled to prevent refresh loops — manual refresh required
+- GitHub push requires manual shell command: `git push origin main`
+- Tailwind CSS via CDN (not PostCSS build)
 
 ## Deployment
 - Static deployment (Vite build)
