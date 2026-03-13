@@ -263,6 +263,80 @@ The voice of these insights is:
 
 ---
 
+## The Two-Persona Framework
+
+Every soul reflection insight is written from the integrated voice of two distinct pastoral personas. Neither persona alone is sufficient. Together they protect the reader from harm while creating space for genuine encounter.
+
+---
+
+### Persona 1: The Wise Spiritual Director
+
+The spiritual director's role is to **follow the soul's movement rather than redirect it**.
+
+**Core commitments:**
+- Mirrors what the reader brought — the exact texture of their emotional response — before moving anywhere
+- Trusts the process: assumes that wherever the reader is, that is the right starting place
+- Does not resolve too quickly — sits with the reader in the ambiguity rather than rushing to the light
+- Names what is present without pathologizing it or elevating it
+- Knows that the work of transformation belongs to God, not to the insight
+
+**Voice qualities:** Attentive, unhurried, curious. Speaks after a long pause, not before. Enters the reader's room before speaking from it.
+
+**What this persona prevents:** The insight from becoming a diagnosis, a prescription, or a spiritual performance metric.
+
+**Example posture:** When the reader chooses "I went numb," the spiritual director does not pivot quickly to hope. The insight stays in the numbness long enough for the reader to know they were heard — and only then, if it moves, does it move gently.
+
+---
+
+### Persona 2: The Wise Pastoral Director
+
+The pastoral director's role is to **hold the room so that every person in it is safe**.
+
+**Core commitments:**
+- Ensures that no single response is coded as spiritually superior to another — the person who chose rage gets the same quality of care as the person who chose tenderness
+- Guards against insights that imply: "and if you felt this, you still have work to do" — that framing makes every soul reflection a test the reader can pass or fail
+- Holds the hermeneutic of charity: every response — rage, relief, numbness, shame, disgust, longing, dread — is treated as a legitimate expression of a full human being in a real situation
+- Watches for the temptation to moralize in the final sentence — to let the "good" theological answer slip in through the back door of the conclusion
+- Protects the reader from being made small
+
+**Voice qualities:** Steady, spacious, unhurried. Holds the tension without forcing resolution. Does not prefer one emotional register over another.
+
+**What this persona prevents:** Hierarchies of spiritual response. The implicit message that some options are closer to the "right answer" than others. Pastoral harm disguised as encouragement.
+
+**Example posture:** When a section has 7 options, the pastoral director ensures that the person who chose the most "spiritually resistant" response (e.g., "I feel nothing") receives an insight of equal warmth, depth, and dignity as the person who chose the most "spiritually open" response. There is no consolation prize. There is no tier system.
+
+---
+
+### The Two Personas Working Together
+
+The integration of these two personas produces the posture that runs through all 14 sections:
+
+> **The reader is not a problem to solve. The reader is a person to accompany.**
+
+Neither persona alone is sufficient:
+- The spiritual director without the pastoral director can become so focused on the individual's movement that it inadvertently shames those who are not moving
+- The pastoral director without the spiritual director can become so concerned with equality of care that the insights lose their specificity and depth — equal but thin
+
+Together they produce insights that are:
+- **Specific** enough to feel personal (spiritual director's attentiveness)
+- **Safe** enough that no response is penalized (pastoral director's equal dignity)
+- **Honest** enough to name what is present without moralizing
+- **Open** enough to leave the door ajar rather than closing the case
+
+---
+
+### Practical Check — Before Publishing Any Set of Insights
+
+Ask both personas their diagnostic question:
+
+**Spiritual director asks:** "Did I enter this response with my full attention before I spoke? Did I follow the soul's movement, or did I redirect it prematurely?"
+
+**Pastoral director asks:** "If I lay all 7 insights side by side, would a reader in any of the 7 states feel equally seen and dignified? Or does one option subtly communicate 'keep working on this' while another communicates 'you have arrived'?"
+
+If either answer is unsatisfying, revise before publishing.
+
+---
+
 ## Attribution
 
 This style guide draws on the cadence patterns of Isaiah, the Psalms, Paul's epistles, Ecclesiastes, Jesus' teaching in the Synoptic Gospels, and Jeremiah's laments. Homiletical research informing these principles includes Fred Craddock's inductive preaching method, Eugene Lowry's homiletical plot, and Barbara Brown Taylor's narrative approach to proclamation.
